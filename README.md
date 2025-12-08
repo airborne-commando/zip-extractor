@@ -1,3 +1,25 @@
+# Extract Zips
+
+* Extract ZIP code data from the tab-delimited file format and return a dictionary mapping ZIP codes to city/state/county info
+* Save the ZIP code mapping as a Python dictionary
+* Save the ZIP code mapping as a JavaScript object
+* Filter the ZIP code mapping by state
+* Search for ZIP codes by city name (case-insensitive)
+* Load ZIP code mapping directly from file and return as dictionary
+  
+# Zip Sort
+
+* Sort ZIP codes numerically and export to a new file
+* Convert ZIP codes to string and pad with leading zeros to ensure 5-digit format
+
+**Usage:**
+
+# Read the original file
+
+      input_file = "zip_full_dump.txt"
+      
+      output_file = "zip_codes_sorted.txt"
+
 # ZIP Code Extractor - Selenium Web Scraper
 
 A Chrome driver script used to extract zips codes off of https://www.zip-codes.com/ on all 50 states and territories using Selenium.
