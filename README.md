@@ -133,4 +133,12 @@ Contains python scripts to extract and sort zip codes from a website, will edit 
 
 Will have to figure out how to sort just by state, eventually.
 
+# External Links:
+
 [United States ZIP Code - codigo postal](https://codigo-postal.co/en-us/usa/)
+
+[US Area Code Listings by State - allareacodes](https://www.allareacodes.com/area_code_listings_by_state.htm)
+
+[Voter extraction (lite)](https://github.com/airborne-commando/tampermonkey-collection?tab=readme-ov-file) Is a component of both of these.
+
+[Voter reg status: tampermonkey edition](https://github.com/airborne-commando/tampermonkey-collection?tab=readme-ov-file#voter-reg-status-tampermonkey-edition)
