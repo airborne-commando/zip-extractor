@@ -129,7 +129,7 @@
 
 Contains python scripts to extract and sort zip codes from a website, will edit this readme later.
 
-[This text file](./zip_codes_sorted.txt) contains all the raw zip codes in a sorted text file in numerical order (highest to lowest).
+[This text file](./zip_codes_sorted.txt) contains all the raw zip codes in a sorted text file in numerical order (lowest to highest), while this contains the zips from [highest to lowest](./zip_full_dump.txt).
 
 Will have to figure out how to sort just by state, eventually.
 
