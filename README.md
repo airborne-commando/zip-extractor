@@ -5,7 +5,7 @@
 
 Here's the aligned table in markdown format:
 
-| State | State Capital | ZIP Range | ZIP Quantity | State founded |
+| State | State Full | ZIP Range | ZIP Quantity | State founded |
 |-------|---------------|-----------|--------------|---------------|
 | AL | Alabama | Montgomery | 35004 to 36925 | 838 | December 14, 1819 |
 | AK | Alaska | Juneau | 99501 to 99950 | 274 | January 3, 1959 |
