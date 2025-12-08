@@ -20,6 +20,8 @@
       
       output_file = "zip_codes_sorted.txt"
 
+If none of the above works well enough for you, use libre office calc.
+
 # ZIP Code Extractor - Selenium Web Scraper
 
 A Chrome driver script used to extract zips codes off of https://www.zip-codes.com/ on all 50 states and territories using Selenium.
