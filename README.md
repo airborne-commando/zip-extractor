@@ -1,3 +1,6 @@
 Contains python scripts to extract and sort zip codes from a website, will edit this readme later.
 
-[This text file](./zip_codes_sorted.txt) contains all the raw zip codes in a sorted text file.
+[This text file](./zip_codes_sorted.txt) contains all the raw zip codes in a sorted text file in numerical order (highest to lowest).
+
+
+Will have to figure out how to sort just by state, eventually.
