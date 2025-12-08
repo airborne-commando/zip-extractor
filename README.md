@@ -1,8 +1,173 @@
-# Zip extractor
+# ZIP Code Extractor - Selenium Web Scraper
+
+A Chrome driver script used to extract zips codes off of https://www.zip-codes.com/ on all 50 states and territories using Selenium.
+
+## Features
+
+- Extracts ZIP code information including:
+  - ZIP Code
+  - Classification (Standard, PO Box, etc.)
+  - City
+  - County
+  - Area Codes
+  - Population
+  - Population Percentage
+- Supports all 50 states + territories
+- Saves data in both CSV and text formats
+- Comprehensive logging system
+- Headless browser option
+- Error handling and retry logic
+
+## Installation
+
+### 1. Prerequisites
+
+- Python 3.7+
+- Chrome browser installed
+- ChromeDriver (can be installed automatically with `webdriver-manager`)
+
+### 2. Clone the Repository
+
+
+git clone https://github.com/airborne-commando/zip-extractor.git
+cd zip-code-extractor
+
+
+### 3. Create Virtual Environment (Recommended)
+
+
+# On Windows
+python -m venv venv
+venv\Scripts\activate
+
+# On macOS/Linux
+python3 -m venv venv
+source venv/bin/activate
+
+
+### 4. Install Dependencies
+
+
+pip install -r requirements.txt
+
+
+If `requirements.txt` doesn't exist, install packages manually:
+
+
+pip install selenium pandas webdriver-manager
+
+
+## Configuration
+
+### ChromeDriver Setup
+
+The script uses `webdriver-manager` to automatically handle ChromeDriver installation. However, if you prefer manual setup:
+
+1. Download ChromeDriver from: https://sites.google.com/chromium.org/driver/
+2. Ensure it matches your Chrome browser version
+3. Add ChromeDriver to your system PATH or place it in the script directory
+
+## Usage
+
+### Basic Usage
+
+Run the script with default settings:
+
+python zip-extractor.py
+
+### Running for Specific States
+
+Modify the `states_to_scrape` list in the `main()` function:
+
+
+# For specific states only
+states_to_scrape = ['CA', 'NY', 'TX', 'FL']
+
+
+## Output Files
+
+The script generates two output files with timestamps:
+
+1. **Text file** (`all_states_zip_codes_YYYYMMDD_HHMMSS.txt`):
+   - Tab-separated values
+   - Includes header row
+
+2. **CSV file** (`all_states_zip_codes_YYYYMMDD_HHMMSS.csv`):
+   - Comma-separated values
+   - Can be opened in Excel, Google Sheets, etc.
+
+### Output Format
+
+| Column | Description |
+|--------|-------------|
+| state | State abbreviation (e.g., CA) |
+| zip_code | 5-digit ZIP code |
+| classification | ZIP code type (Standard, PO Box, etc.) |
+| city | Associated city |
+| county | County name |
+| area_codes | Telephone area codes |
+| population | Population count |
+| population_percent | Population percentage |
+
+## Logging
+
+The script creates detailed log files:
+
+- **Console output**: Real-time progress monitoring
+- **Log file**: `zip_extraction_YYYYMMDD_HHMMSS.log`
+- Log levels: DEBUG, INFO, WARNING, ERROR
+
+## Troubleshooting
+
+### Common Issues
+
+1. **ChromeDriver version mismatch**
+   - Solution: Use `webdriver-manager` or update ChromeDriver
+
+2. **Timeout errors**
+   - Solution: Increase wait times in the script
+   - Check internet connection
+
+3. **Element not found**
+   - Solution: Website structure may have changed
+   - Update selectors in the code
+
+4. **Memory issues**
+   - Solution: Process fewer states at once
+   - Add more delays between requests
+
+### Debug Mode
+
+Run with increased verbosity by modifying the log level:
+
+
+# Change in main() function
+extractor = ZipCodeExtractor(headless=True, log_level=logging.DEBUG)
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test thoroughly
+5. Submit a pull request
+
+## License
+
+This project is for educational purposes. Please ensure you comply with the target website's terms of service and applicable laws when using this script.
+
+## Support
+
+For issues and questions:
+1. Check the troubleshooting section
+2. Review the log files
+3. Open an issue in the GitHub repository
+
+--------
 
 **Charts**
 
------
+--------
 
 **Note: some zips have zero of a populous.**
 
@@ -59,11 +224,11 @@
 | WI | Wisconsin | Madison | 53001 to 54990 | 898 | May 29, 1848 |
 | WY | Wyoming | Cheyenne | 82001 to 83414 | 195 | July 10, 1890 |
 
------
+--------
 
 **Area Codes**
 
------
+--------
 
 | State/Territory | Area Codes (Think phone number) |
 |-----------------|------------|
@@ -134,6 +299,8 @@ Contains python scripts to extract and sort zip codes from a website, will edit 
 Will have to figure out how to sort just by state, eventually.
 
 # External Links:
+
+[ZIP Code Database Listings, Maps, and Boundary Data - Zip-Codes](https://www.zip-codes.com/)
 
 [United States ZIP Code - codigo postal](https://codigo-postal.co/en-us/usa/)
 
