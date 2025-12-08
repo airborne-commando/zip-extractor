@@ -2,11 +2,8 @@
 
 **Note: some zips have zero of a populous.**
 
-
-Here's the aligned table in markdown format:
-
-| State | State Full | ZIP Range | ZIP Quantity | State founded |
-|-------|---------------|-----------|--------------|---------------|
+| State | State Full | State Capital | ZIP Range | ZIP Quantity | State founded |
+|-------|------------|-----------|-----------|-----|-------------------|
 | AL | Alabama | Montgomery | 35004 to 36925 | 838 | December 14, 1819 |
 | AK | Alaska | Juneau | 99501 to 99950 | 274 | January 3, 1959 |
 | AZ | Arizona | Phoenix | 85001 to 86556 | 567 | February 14, 1912 |
