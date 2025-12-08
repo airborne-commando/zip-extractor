@@ -14,7 +14,7 @@
 
 **Usage:**
 
-# Read the original file
+**Read the original file**
 
       input_file = "zip_full_dump.txt"
       
