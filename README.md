@@ -60,3 +60,5 @@ Contains python scripts to extract and sort zip codes from a website, will edit 
 [This text file](./zip_codes_sorted.txt) contains all the raw zip codes in a sorted text file in numerical order (highest to lowest).
 
 Will have to figure out how to sort just by state, eventually.
+
+[United States ZIP Code - codigo postal](https://codigo-postal.co/en-us/usa/)
