@@ -316,6 +316,26 @@ For issues and questions:
 
 --------
 
+**use ctrl+f and just replace the zip if you have to**
+
+    zip,city
+    '14001' : ,'Erie'
+    '14004' : ,'Erie'
+    '14006' : ,'Erie'
+    '14010' : ,'Erie'
+    '14025' : ,'Erie'
+
+**to this**
+
+    zip,city
+    14001,
+    14004,
+    14006,
+    14010,
+    14025,
+
+--------
+
 Contains python scripts to extract and sort zip codes from a website, will edit this readme later.
 
 [This text file](./zip_codes_sorted.txt) contains all the raw zip codes in a sorted text file in numerical order (lowest to highest), while this contains the zips from [highest to lowest](./zip_full_dump.txt).
